@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen bg-[#050816] overflow-hidden flex items-center justify-center px-6 relative">
+
+    <!-- Background Glow -->
+    <div class="absolute w-96 h-96 bg-violet-600/20 blur-[180px] rounded-full -top-20 -left-20"></div>
+    <div class="absolute w-96 h-96 bg-cyan-500/20 blur-[180px] rounded-full -bottom-20 -right-20"></div>
+
+    <!-- Floating Grid -->
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,white_1px,transparent_1px)] bg-[length:35px_35px]">
+    </div>
+
+    <!-- Card -->
+    <section class="relative w-full max-w-4xl">
+
+        <div
+            class="rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-3xl shadow-[0_20px_80px_rgba(0,0,0,.5)] px-8 py-12 md:px-16 md:py-16">
+
+            <!-- Small Label -->
+            <div class="flex justify-center">
+
+                <span
+                    class="rounded-full border border-indigo-400/30 bg-indigo-500/10 px-5 py-2 text-xs uppercase tracking-[0.35em] text-indigo-200">
+                    ✨ Daily Motivation
+                </span>
+
+            </div>
+
+            <!-- Quote Icon -->
+            <div class="text-center mt-10">
+
+                <span
+                    class="text-8xl md:text-9xl font-serif bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+                    “
+                </span>
+
+            </div>
+
+            <!-- Quote -->
+            <div class="text-center mt-3">
+
+                <p id="quote-text"
+                    class="text-white text-2xl md:text-4xl font-light leading-relaxed max-w-3xl mx-auto transition-all duration-500">
+                    The future belongs to those who believe in the beauty of their dreams.
+                </p>
+
+                <div
+                    class="w-24 h-[2px] bg-gradient-to-r from-transparent via-indigo-400 to-transparent mx-auto my-10">
+                </div>
+
+                <h2 id="author"
+                    class="text-lg md:text-xl font-semibold tracking-[0.3em] uppercase text-cyan-300">
+                    Eleanor Roosevelt
+                </h2>
+
+            </div>
+
+            <!-- Button -->
+            <div class="flex justify-center mt-14">
+
+                <button id="generateBtn"
+                    class="group relative overflow-hidden rounded-2xl bg-gradient-to-r from-indigo-600 via-violet-600 to-fuchsia-600 px-10 py-4 text-lg font-semibold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_40px_rgba(99,102,241,.5)] active:scale-95">
+
+                    <span class="relative z-10 flex items-center gap-2">
+                        ✨ New Quote
+                    </span>
+
+                    <span
+                        class="absolute inset-0 -translate-x-full bg-white/20 skew-x-12 transition-transform duration-700 group-hover:translate-x-[220%]"></span>
+
+                </button>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="mt-12 text-center">
+
+                
+<div class="mt-12 text-center border-t border-white/10 pt-6">
+    <p class="text-slate-400 text-sm tracking-wide">
+        Crafted with ❤️ by
+    </p>
+
+    <h3 class="mt-2 text-lg font-bold tracking-[0.25em] uppercase bg-gradient-to-r from-indigo-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent">
+        Renjiro Robin
+    </h3>
+    
+</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
